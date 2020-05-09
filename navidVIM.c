@@ -1,6 +1,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Hello world! :D	  		!!!
-This is navid! 			!!!
+This is Navid! 			!!!
 		  		!!!
 My blog: "navidmalek.blog.ir"	!!!
 				!!!
