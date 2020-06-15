@@ -53,7 +53,8 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  	:colorschema -> for colors
 +  	:set autoindent -> auto indenting for inner loops/commands in coding
 +  	:set paste -> paste exactly (don't use autoindent or ...)
-+  
++ 	:set mouse +=a -> for using mouse in visual mode (-= for disabling it)
++
 +  You cand combine commands like:
 +  	NumberCommand -> 3x, 2o, ...
 +  	4dw -> delete 4 words from the curser point
