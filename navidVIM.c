@@ -27,15 +27,16 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  	O -> new line up
 +  	J -> join one line to the next
 +  	x,X -> delete char
-+  	:wq -> write and quite
++  	:wq -> write and quit
 +  	r -> replace one char
 +  	a -> append
 +  	A -> append at the end of line
 +  	u -> undo
+	ctrl + r -> redo
 +  	d -> delete (dw == delete word, dd == del line)
 +  	G -> go (1G -> first line, G -> end, 33G -> line 33)
 +  	y -> copy/yank (yy -> entire line, yw, ...)
-+  	p, P -> paste [up,down]
++  	p, P -> paste [P -> up, p -> down]
 +  	/navid -> search for "navid" (after search: n, N -> next match)
 +  	$ -> go to end of line
 +  	^ -> go to start of line
@@ -50,7 +51,7 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  Set and color =>	
 +  	:set number/nonumber -> numbering of lines appear or not 
 +  	:colorschema -> for colors
-+  	:setautoindent -> auto indenting for inner loops/commands in coding
++  	:set autoindent -> auto indenting for inner loops/commands in coding
 +  	:set paste -> paste exactly (don't use autoindent or ...)
 +  
 +  You cand combine commands like:
@@ -64,10 +65,10 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  	:Explore -> for exploring file system (use :q to go back to file) 
 +  	:Vexplore -> devide the screen vertically (one for Explore, one for file)
 +  	:split or :vsplit -> for spliting or vertically spliting screen (and cloning the file currently opened)
-+  		// you can use splitting recursively and with "ctrl+W+ARROW" switch between them
++  		// you can use splitting recursively and with "ctrl+W+ARROW" switch between them HOWEVER using TMux is recommended for this purposes
 +  
 +  What is ! and system commands =>
-+  	! at the of command  -> to ovveride (e.g. :q! to force quit without saving)
++  	! at the end of the command  -> to ovveride (e.g. :q! to force quit without saving)
 +  	:! -> for system command (e.g. :!ls, :!top)
 +  	!! or :.! -> for printing the output of system command in the code at the curser point (e.g. !! ls)
 +  
@@ -88,8 +89,62 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  	:%s/world/the_world/g -> in the entire document
 +  	:18,24s/^/\// -> comment (in C) all the 18 to 24 lines (\ is the escape character before //)
 +  
-+  
-+  
++  For help =>
++	:help COMMAND (e.g. :help smartcase, :help set, ...)
++
++  How to install plugins =>
++		git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
++	2) use:
++		touch ~/.vimrc
++	3) write the Vundle configuration into "vimrc" file
++		{
++			set nocompatible              " required
++			filetype off                  " required
++
++			" set the runtime path to include Vundle and initialize
++			set rtp+=~/.vim/bundle/Vundle.vim
++			call vundle#begin()
++
++			" alternatively, pass a path where Vundle should install plugins
++			"call vundle#begin('~/some/path/here')
++
++			" let Vundle manage Vundle, required
++			Plugin 'gmarik/Vundle.vim'
++
++			" add all your plugins here (note older versions of Vundle
++			" used Bundle instead of Plugin)
++
++			" ...
++
++			" All of your Plugins must be added before the following line
++			call vundle#end()            " required
++			filetype plugin indent on    " required
++
++			set encoding=utf-8
++		}
++	4) use this command in VIM to install each plugin and configuration you add in "vimrc" file:
++		:PluginInstall
++	
++	5) Adding and configuring some plugins for python:
++       		There are many manyyyyy available plugins	
++		you can find some of them in here which comments are in persian language:
++		https://jadi.net/2020/05/vim-prat-3/
++
++		Also for example if you want enable very basic folding based on indention you can add these lines into "vimrc" and install (using SimplyFold is more advanced for python) 
++		the plugin:
++		{
++			" Enable folding
++			set foldmethod=indent
++			set foldlevel=99
++		}
++
++		Nice autoindent for python:
++		{
++			Plugin 'vim-scripts/indentpython.vim'
++		}
++	*) for removing a plugin, delete the entry from "vimrc" and then run the following command in VIM:
++		:PluginClean
++
 +
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
