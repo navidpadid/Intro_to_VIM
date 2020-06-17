@@ -41,7 +41,9 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  	$ -> go to end of line
 +  	^ -> go to start of line
 +  	. -> repeat last insert/command
-+  
++ 	m + a => set a marker name "a"
++	' + a => jump to the line where mark "a" is
++
 +  Visual mode =>
 +  	v -> visual mode (you can select with keyboard and then use your desired command on the selected part, like dd for deleting)
 +  		or like using > or < to shift the selected part
