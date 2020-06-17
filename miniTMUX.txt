@@ -29,7 +29,8 @@ For synchronizing the input of all panes:
 		setw synchronize-panes on => all panes have the synchronized input
 		setw synchronize-panes off => non-synchronize
 
-
+To enabile 256 color mode in TMUX (useful in VIM):
+	tmux -2 .... 
 
 --------------------------------------------------
 For a pretty good cheatsheet, visit here:	

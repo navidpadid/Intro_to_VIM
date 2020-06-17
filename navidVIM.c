@@ -65,6 +65,7 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  	% -> go to next opening bracet/parantesize / if at the opening(closing) bracet -> go to the end(beginin) of it
 +  
 +  Some fancy commands =>
++	:browse oldfiles -> to see and open recent edited files
 +  	:Explore -> for exploring file system (use :q to go back to file) 
 +  	:Vexplore -> devide the screen vertically (one for Explore, one for file)
 +  	:split or :vsplit -> for spliting or vertically spliting screen (and cloning the file currently opened)
