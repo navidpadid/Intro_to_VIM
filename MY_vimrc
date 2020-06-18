@@ -14,6 +14,7 @@ Plugin 'vim-scripts/indentpython.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-airline/vim-airline'
+Plugin 'Valloric/YouCompleteMe'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -63,3 +64,17 @@ set noerrorbells
 
 " airline config
 set t_Co=256
+
+" set mouse visual by default
+set mouse+=a
+
+" for syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+" syntastic recommendation
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0

@@ -173,7 +173,5 @@ static int tops_init(void) {
 	if (!topsFile) {
 		return -ENOMEM;
 	}
-	
-
 	return 0;
 }
