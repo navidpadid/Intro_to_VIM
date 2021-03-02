@@ -16,6 +16,8 @@ Plugin 'nvie/vim-flake8'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'preservim/tagbar'
+Plugin 'frazrepo/vim-rainbow'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -85,3 +87,9 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+" for tagbar toggle
+nmap <F8> :TagbarToggle<CR>
+
+" for rainbow
+let g:rainbow_active = 1
