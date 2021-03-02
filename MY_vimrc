@@ -15,6 +15,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'vim-airline/vim-airline'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'tmhedberg/SimpylFold'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -28,8 +29,8 @@ filetype plugin indent on    " required
 set encoding=utf-8
 
 " Enable folding
-set foldmethod=indent
-set foldlevel=99
+" set foldmethod=indent
+" set foldlevel=99
 
 " for python indention PIP-8
 au BufNewFile,BufRead *.py
@@ -44,9 +45,6 @@ au BufNewFile,BufRead *.py
 " for showing BadWhiteSpaces in code
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 highlight BadWhitespace ctermbg=red guibg=darkred
-
-" TODO add YouCompleteMe
-
 
 " Syntax check for python (after you write into file it will check)
 let python_highlight_all=1
@@ -76,5 +74,14 @@ set statusline+=%*
 " syntastic recommendation
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
+
+" for autocomplete
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
