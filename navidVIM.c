@@ -152,8 +152,8 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +	VIM PLUGINS TO CHECK OUT LATER:
 +	AutoComplete (NEW) https://github.com/neoclide/coc.nvim
 +	Python Mode https://github.com/python-mode/python-mode
-+	Tag Bar (overview list of the code): https://github.com/preservim/tagbar
-+	Different Colors for Blocks: https://github.com/frazrepo/vim-rainbow
++	Tag Bar (overview list of the code): https://github.com/preservim/tagbar -> (installation) https://jdhao.github.io/2018/09/28/nvim_tagbar_install_use/
++	Different Colors for Blocks: https://github.com/frazrepo/vim-rainbow 
 +	Gigutter shows git diff summary: https://www.vim.org/scripts/script.php?script_id=4827
 +
 +	A list of good plugins -> https://github.com/akrawchyk/awesome-vim
