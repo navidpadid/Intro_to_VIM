@@ -92,6 +92,11 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  	:18,31s/world/the_world/g -> from number 18 to 31
 +  	:%s/world/the_world/g -> in the entire document
 +  	:18,24s/^/\// -> comment (in C) all the 18 to 24 lines (\ is the escape character before //)
++	ctrl + v -> block select 
++	=followed by=>
++		Shift + I + # -> python code multiline comment
++		OR
++		x -> deletes first character (uncoments)
 +  
 +  For help =>
 +	:help COMMAND (e.g. :help smartcase, :help set, ...)
