@@ -70,6 +70,7 @@ THIS IS BASED ON "jadi.ir/"	!!!
 +  	:Vexplore -> devide the screen vertically (one for Explore, one for file)
 +  	:split or :vsplit -> for spliting or vertically spliting screen (and cloning the file currently opened)
 +  		// you can use splitting recursively and with "ctrl+W+ARROW" switch between them HOWEVER using TMux is recommended for this purposes
++	ctrl + w | z (| means a pause) -> for closing the preview pane
 +  
 +  What is ! and system commands =>
 +  	! at the end of the command  -> to ovveride (e.g. :q! to force quit without saving)
