@@ -188,53 +188,36 @@ So here is an intro for TMUX too!
 Many TMUX shortcuts are like:
 
 	ctrl + B | or +  ....
-	
 	| means to pause after the previous combination
 	
 Some combinations:
 
 	ctrl + b | ? => some keyboard shortcuts
-	
 	ctrl + b | % => split vertically
-	
 	ctrl + b | " => split horizontally
-	
 	ctrl + b | ArrowKeys => for switching panes
-	
 	ctrl + b + ArrowKeys => for resizing panes
-	
 	ctrl + b | z => for focusing/unfocusing on the current pane
-	
 	ctrl + b | t => for showing time in the pane
-	
 	ctrl + b | 0,1,...,n => switch between windows
-	
 	ctrl + b | c => create new tmux window
-	
 	ctrl + b | d => detach from session
-	
 	ctrl + b | PageUP => for going up in the output (for long outputs of a command)	
-	
 		q => to quit this browsing mode	
-		
 		ctrl + s => to search in this mode		
 		
 
 TMUX for session attachment:
 
 	tmux ls => show active sessions
-	
 	tmux attach -t 0,1,...,n => attach to a session (you can use name of a session instead of number)
-	
 	tmux new -s NAVID => create new session named NAVID		 
 
 
 For synchronizing the input of all panes:
 
 	ctrl + b | :
-	
 		setw synchronize-panes on => all panes have the synchronized input
-		
 		setw synchronize-panes off => non-synchronize
 
 
@@ -243,7 +226,7 @@ To enabile 256 color mode in TMUX (useful in VIM):
 	tmux -2 .... 
 
 
---------------------------------------------------
+
 For a pretty good cheatsheet, visit here:	
 
 	https://gist.github.com/andreyvit/2921703
