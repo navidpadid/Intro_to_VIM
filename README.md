@@ -5,6 +5,8 @@ This text document (which is a navidVIM.c file format only for fancy markup by d
 
 Also a very quick intro for TMUX is available in the "miniTMUX.txt" file.
 
+Here are the contents in the readme!
+
 
 
 ## Intro to VIM contents
