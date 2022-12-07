@@ -37,6 +37,7 @@ THIS IS BASED ON "jadi.ir/"
   	u -> undo
        ctrl + r -> redo
   	d -> delete (dw == delete word, dd == del line)
+	D -> delete from cursur to the end of the line
   	G -> go (1G -> first line, G -> end, 33G -> line 33)
   	y -> copy/yank (yy -> entire line, yw, ...)
   	p, P -> paste [P -> up, p -> down]
